@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import CheckoutForm from './CheckoutForm';
- 
+import logo from "../assets/logow.png"
+import "./landing.css"
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe("pk_test_KMj7ZEcfaDq0VDhBCT8MXclB");
@@ -10,8 +11,7 @@ const stripePromise = loadStripe("pk_test_KMj7ZEcfaDq0VDhBCT8MXclB");
 const successMessage = () => {
   return (
     <div className="success-msg">
-      ...
-      ...
+      The payment was sucessfull
     </div>
   )
 }
@@ -19,8 +19,7 @@ const successMessage = () => {
 const cart = () => {
   return (
     <React.Fragment>
-      ...
-      ...
+      30 days Subscription Whatzapp
     </React.Fragment>
   )
 }
@@ -31,17 +30,18 @@ function Checkout() {
   return (
     <div className="container">
       <div className="py-5 text-center">
-        <h4>Stripe Integration - <a href="https://www.cluemediator.com/" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h4>
+        <img src={logo} className="stripe-logo"></img>
       </div>
  
       <div className="row s-box">
         {paymentCompleted ? successMessage() : <React.Fragment>
-          <div className="col-md-5 order-md-2 mb-4">
+          {/* <div className="col-md-5 order-md-2 mb-4">
             {cart()}
-          </div>
-          <div className="col-md-7 order-md-1">
+          </div> */}
+          {/* <div className="col-md-7 order-md-1"> */}
+          <div className="col-12 col-md-8 offset-md-2 ">
             <Elements stripe={stripePromise}>
-              <CheckoutForm amount={2000} setPaymentCompleted={setPaymentCompleted} />
+              <CheckoutForm amount={745} setPaymentCompleted={setPaymentCompleted} />
             </Elements>
           </div>
         </React.Fragment>}

@@ -8,8 +8,6 @@ import Customers from "./Customers"
 import Plan from "./Plan";
 import Footer from "./Footer"
 
-import Footerb from "../assets/Footer.png"
-import CustomNavbar from "./customNavbar";
 import "./landing.css"
 
 function LandingPage(){

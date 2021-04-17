@@ -18,7 +18,7 @@ function Signup(){
     const onSubmitHandler=(e)=>{
         e.preventDefault();
         var future = new Date();
-        future.setDate(future.getDate() + 30);
+        future.setDate(future.getDate() + 7);
         // console.log(future.getDate(), future.getMonth(), future.getFullYear(), future.getHours(), future.getMinutes(), future.getSeconds())
         var stryear=future.getFullYear().toString();
         var strmonth;

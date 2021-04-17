@@ -22,11 +22,12 @@ function Customers(){
                 </div>
                 <div className="col-12 col-sm-9" >
                     <div className="review" style={{width: "90%"}}>
-                    We are fastest growing business school and and we have been using Whatsapp for more than 1 year now. Right now, we have more than 100 agents. Without Whatsapp, it will be impossible to use WhatsApp as a marketing tool. As soon as you start to use Whatsapp, it will become very helpful for you.”
+                    We have been using Whatzapp for more than 1 year now. Right now, we have more than 200 agents. We cannot imagine using whatsapp without Whatzapp as a customer engagement tool”
 
                     </div>
-                    <div className="author" style={{marginTop:"20px"}}>
-                        <img className="authorimg" src={author1}/>
+                    <div className="author" style={{marginTop:"20px", fontSize:"24px", fontWeight:"500"}}>
+                        José Antonio
+                        {/* <img className="authorimg" src={author1}/> */}
                     </div>
                 </div>
                 </div>
@@ -39,10 +40,13 @@ function Customers(){
                 </div>
                 <div className="col-12 col-sm-9" >
                     <div className="review" style={{width: "90%"}}>
-                    Amazing tool that makes your communication with customers much easier! Our overall experience with Whatsapp has been great. Customer support is amazing, super responsive and open to suggestions. The product itself perfectly fits our needs, and if it lacks anything... they are developing it already, which is a great and nice surprise. I would give 6 out 5 stars to this App, totally their brand advocate, keep it up!”
+    
+Amazing tool that makes your communication with customers much easier! Our overall experience with WhatZapp has been great. Customer support is amazing, super responsive. I love interacting with the team and are always looking to solve our problems in a unique way
+”
                     </div>
-                    <div className="author" style={{marginTop:"20px"}}>
-                        <img className="authorimg" src={author2}/>
+                    <div className="author" style={{marginTop:"20px", fontSize:"24px", fontWeight:"500"}}>
+                        Ana María
+                        {/* <img className="authorimg" src={author2}/> */}
                     </div>
                 </div>
                 </div>
