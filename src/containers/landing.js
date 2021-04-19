@@ -21,6 +21,10 @@ function LandingPage(){
             <br/><br/><br/><br/>
             
             <img src={usedby} alt="usedby" className="usedby" />
+            <div>
+                <button className="e0_8">Learn More</button>
+            </div>
+            
             <br/><br/><br/><br/>
             <hr/>
             <br/><br/><br/><br/>

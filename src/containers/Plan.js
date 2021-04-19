@@ -20,7 +20,7 @@ function Plan(){
               </div>
               <div className="plan-desc col-12 col-md-8 row">
                 <div className="trial-msg col-8">
-                  Get Free trial for 30 days!
+                  Get Free trial for 7 days!
                 </div>
                 <div className="col-4">
                   <button className="trial-button">Start Trial</button>

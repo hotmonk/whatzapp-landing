@@ -1,6 +1,8 @@
+import { Redirect } from "react-router-dom";
 const API_ENDPOINT = 'https://whatzapp.co/api/v1/whatzapp/payVerify';
 
 export const stripePaymentMethodHandler = async (data, cb) => {
+
   const { amount, result } = data;
   console.log(data);
   if (result.error) {
@@ -16,6 +18,7 @@ export const stripePaymentMethodHandler = async (data, cb) => {
     });
     console.log(paymentResponse);
     cb(paymentResponse);
+    return <Redirect to="/home"/>
   }
 }
 
