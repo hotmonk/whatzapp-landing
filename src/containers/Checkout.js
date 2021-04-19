@@ -3,6 +3,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import CheckoutForm from './CheckoutForm';
 import logo from "../assets/logow.png"
+import {Redirect} from 'react-router-dom'
 import "./landing.css"
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -11,7 +12,7 @@ const stripePromise = loadStripe("pk_test_KMj7ZEcfaDq0VDhBCT8MXclB");
 const successMessage = () => {
   return (
     <div className="success-msg">
-      The payment was sucessfull
+      <Redirect to="/home"/>
     </div>
   )
 }
