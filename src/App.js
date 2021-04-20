@@ -8,6 +8,7 @@ import Faqs from "./containers/Faqs";
 import Login from "./containers/Login"
 import Home from "./containers/Home"
 import Checkout from "./containers/Checkout"
+import Dashboard from "./containers/Dashboard"
 import {Route, Switch} from 'react-router-dom';
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/login" exact component={Login}/>
       <Route path="/home" exact component={Home}/>
       <Route path="/checkout" exact component={Checkout}/>
+      <Route path="/dashboard" exact component={Dashboard}/>
       <Route path="/" component={LandingPage}/>
       </Switch>
     </div>
