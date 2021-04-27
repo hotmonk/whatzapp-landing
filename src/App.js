@@ -1,6 +1,6 @@
 import './App.css';
 import LandingPage from './containers/landing';
-import Navbar from './containers/CustomNavbar';
+import Navbar from './containers/customNavbar';
 import Terms from "./containers/Terms"
 import Privacy from "./containers/Privacy";
 import Signup from "./containers/Signup";
@@ -12,7 +12,7 @@ import {Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <div>
-      <Navbar/>
+/     <Navbar/>
       <Switch>
       <Route path="/terms" exact component={Terms}/>
       <Route path="/privacy" exact component={Privacy}/>
