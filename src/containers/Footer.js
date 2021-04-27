@@ -16,8 +16,16 @@ function Footer(){
                         <div className="footer-box-desc">With our powerful yet easy-to-use tools, it’s never been easier to grow your business on WhatsApp.</div>
                     </div>
                     <div className="col-12 col-lg-4">
-                        <div><button className="footer-signup">Sign Up its free</button></div>
-                        <div><button className="footer-demo">Schedule a Demo</button></div>
+                        <div>
+                            <a href="/login">
+                            <button className="footer-signup" >Sign Up its free</button>
+                            </a>
+                            </div>
+                        <div>
+                            <a href="mailto: helloworld@whatzapp.co">
+                            <button className="footer-demo">Schedule a Demo</button>
+                            </a>
+                            </div>
                         
                     </div>
                 </div>
