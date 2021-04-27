@@ -17,7 +17,7 @@ function Footer(){
                     </div>
                     <div className="col-12 col-lg-4">
                         <div>
-                            <a href="/signup">
+                            <a href="/login">
                             <button className="footer-signup" >Sign Up its free</button>
                             </a>
                             </div>
