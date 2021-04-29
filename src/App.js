@@ -13,7 +13,7 @@ import {Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <div>
-/     <Navbar/>
+      <Navbar/>
       <Switch>
       <Route path="/terms" exact component={Terms}/>
       <Route path="/privacy" exact component={Privacy}/>
