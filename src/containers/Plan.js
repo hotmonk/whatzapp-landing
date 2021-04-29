@@ -10,7 +10,7 @@ function Plan(){
               One Service One Plan
             </div>
             <div className="plan-subsubheading">
-              Free 30 day Trial. No Obligations. Credit Card not required for Trial.
+              Free 7 days Trial. No Obligations. Credit Card not required for Trial.
             </div>
             <div className="plan-box col-12 col-md-10  row">
               <div className="plan-pricing col-12 col-md-4">
