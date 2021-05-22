@@ -42,7 +42,7 @@ function Checkout() {
           {/* <div className="col-md-7 order-md-1"> */}
           <div className="col-12 col-md-8 offset-md-2 ">
             <Elements stripe={stripePromise}>
-              <CheckoutForm amount={745} setPaymentCompleted={setPaymentCompleted} />
+              <CheckoutForm amount={729} setPaymentCompleted={setPaymentCompleted} />
             </Elements>
           </div>
         </React.Fragment>}

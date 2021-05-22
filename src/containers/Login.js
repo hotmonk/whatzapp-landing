@@ -9,6 +9,8 @@ function Login(props){
     let history = useHistory();
 
     const [otpformflag, setotpformflag] = useState(false)
+
+    //send mobile number to actie otp sending
     const postrequesthandler=async(body)=>{
         const requestOptions = {
             method: 'POST',
@@ -25,6 +27,7 @@ function Login(props){
         }
     }
 
+//send otp to check if the submitte otp is correct
     const otppostrequesthandler=async(body)=>{
         const requestOptions = {
             method: 'POST',

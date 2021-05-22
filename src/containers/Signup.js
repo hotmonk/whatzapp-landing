@@ -3,8 +3,10 @@ import {Form, Button} from 'react-bootstrap';
 import './auth.css'
 import logo from '../assets/logow.png'
 import axios from 'axios';
-function Signup(){
+import { useHistory } from "react-router-dom";
 
+function Signup(){
+    let history = useHistory();
     const postrequesthandler=async(body)=>{
         const requestOptions = {
             method: 'POST',
@@ -13,6 +15,8 @@ function Signup(){
         };
         const response = await fetch('https://whatzapp.co/api/v1/whatzapp/basicInfo', requestOptions);
         const data = await response.json();
+        if(data)
+        history.push("/login");
         console.log(data)
     }
     const onSubmitHandler=(e)=>{

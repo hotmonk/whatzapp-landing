@@ -6,6 +6,8 @@ import './landing.css'
 import {Link} from 'react-router-dom'
 function Home(props){
   const [expiry, setExpiry] = useState(null);
+  //this func fires on component load up
+  //sends back the expiry date of the account
     useEffect(() => {
         console.log(localStorage.getItem("mobile"))
         axios.get('https://whatzapp.co/api/v1/whatzapp/getCreditHistory', {
