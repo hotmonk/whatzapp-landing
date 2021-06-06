@@ -4,6 +4,7 @@ import axios from "axios";
 import { connect } from "react-redux";
 import "./landing.css";
 import { Link } from "react-router-dom";
+import Pricing from "./Pricing";
 function Home(props) {
   const [expiry, setExpiry] = useState(null);
   const [amountToPay, setAmountToPay] = useState(745);
@@ -28,40 +29,15 @@ function Home(props) {
         <center>
           <div>
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+
             <div className="validity-heading">Expiry Date:</div>
             <div className="validity-value">
               {expiry ? expiry.substr(0, 10) : null}
             </div>
           </div>
-          <br />
-          <div className="rechargeExpiry">
-            <div>
-              <Link to="/checkout">
-                <button
-                  className="e0_8"
-                  onClick={() => localStorage.setItem("amountToPay", "745")}
-                >
-                  Recharge $9.99/30days
-                </button>
-              </Link>
-            </div>
-            <div>
-              <Link to="/checkout">
-                <button
-                  className="e0_8"
-                  onClick={() => localStorage.setItem("amountToPay", "7450")}
-                >
-                  Recharge $100/365days
-                </button>
-              </Link>
-            </div>
-          </div>
         </center>
+
+        <Pricing />
       </div>
     </div>
   );

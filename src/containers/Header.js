@@ -11,7 +11,7 @@ function Header() {
                     Everything You Need
                 </div> */}
             <div className="headerheading">
-              Manage your business on{" "}
+              World's 1st CRM inside{" "}
               <u
                 style={{
                   textDecorationLine: "underline",
@@ -25,12 +25,18 @@ function Header() {
               Communicating with your audience on WhatsApp has never been
               easier! WhatZapp Chrome extension contains all the tools you need
               to communicate with your customers efficiently and utilize the
-              full power of WhatsApp. Offering tools such as Sending messages,
-              reminders, Quick Replies, Polls, CRM etc that make your everyday
-              business not only simple to run but also far more efficient in
-              driving sales.{" "}
+              full power of WhatsApp. Offering tools to save the customer's
+              name, label, interest level and followup date, WhatZapp allows you
+              to manage customers within Whatsapp itself. Moreover, tools such
+              as Sending messages, Polls etc that make your everyday business
+              not only simple to run but also far more efficient in driving
+              sales.{" "}
             </div>
-            {/* <Link to="/signup"><button className="e0_8">Signup, It's Free</button></Link>  */}
+            {
+              <Link to="https://chrome.google.com/webstore/detail/whatzapp/clgficggccelgifppbcaepjdkklfcefd">
+                <button className="e0_8">Download Extension</button>
+              </Link>
+            }
           </div>
         </div>
         <div className="picture-content col-12 col-md-6">

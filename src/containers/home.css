@@ -19,7 +19,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 0 0 38px;
 }
 
 .cardBody h3 {
@@ -44,7 +43,7 @@
   text-align: center;
 }
 .rechargeButton {
-  background: #0074fc;
+  background: #88ff9f;
   height: 34px;
   width: 113px;
   margin-top: 34px;
@@ -52,23 +51,24 @@
   border-radius: 3px;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
   font-size: 18px;
-  color: white;
+  color: black;
   margin-left: 34%;
+  margin-bottom: 24px;
   font-weight: 600;
 }
 .gap2 button {
-  background-color: white;
-  color: blue;
+  background-color: black;
+  color: #88ff9f;
   font-weight: 600;
 }
 .Pricing {
-  margin-top: 7%;
+  margin-top: 4%;
 }
 .gap2 .cardHeader span {
   font-size: 1rem;
 }
 
 .gap2 {
-  background-color: #4d5bed !important;
-  color: white;
+  background-color: #88ff9f;
+  color: black;
 }

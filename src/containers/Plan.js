@@ -1,12 +1,11 @@
-function Plan(){
-    return(
-      <center>
-      <div >
-        
-            <div className="plan-heading">
-                PRICING
-            </div>
-            <div className="plan-subheading">
+import Pricing from "./Pricing";
+
+function Plan() {
+  return (
+    <div>
+      <div className="plan-heading">PRICING</div>
+      <Pricing />
+      {/* <div className="plan-subheading">
               One Service One Plan
             </div>
             <div className="plan-subsubheading">
@@ -26,15 +25,14 @@ function Plan(){
                   <button className="trial-button">Start Trial</button>
                 </div>
               </div>
-            </div>
-        
-        </div>
-        </center>
-    )
+            </div> */}
+    </div>
+  );
 }
 export default Plan;
 
-{/* <div className="e0_558">
+{
+  /* <div className="e0_558">
   <div className="e0_559">
     <div className="e0_560"></div><span  className="e0_561">Free</span>
   </div>
@@ -66,4 +64,5 @@ export default Plan;
     <div className="e0_591"></div><span  className="e0_592">Annual billing (20%off) 😍</span><span  className="e0_593">All Prices are exclusive 
 of taxes</span><span  className="e0_594">Free</span><span  className="e0_595">$96</span><span  className="e0_596">$192</span><span  className="e0_597">$285</span>
   </div>
-</div> */}
+</div> */
+}
