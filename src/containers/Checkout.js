@@ -42,7 +42,9 @@ function Checkout() {
             <div className="col-12 col-md-8 offset-md-2 ">
               <Elements stripe={stripePromise}>
                 <CheckoutForm
-                  amount={1}
+                  amount={parseInt(
+                    localStorage.getItem("amountToPay").toString()
+                  )}
                   setPaymentCompleted={setPaymentCompleted}
                 />
               </Elements>
