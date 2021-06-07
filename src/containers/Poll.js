@@ -1,4 +1,5 @@
 import Pollimg from "../assets/Pollimg.png";
+import { Link } from "react-router-dom";
 function Poll() {
   return (
     <div className="powerful-body row">
@@ -19,7 +20,12 @@ function Poll() {
             </div>
           </div>
         </div>
-        <button className="learn-more">Download Extension</button>
+        <a
+          href="https://chrome.google.com/webstore/detail/whatzapp/clgficggccelgifppbcaepjdkklfcefd"
+          target="_blank"
+        >
+          <button className="e0_8">Download Extension</button>
+        </a>
       </div>
 
       <div className="powerful-img col-12 col-lg-7">

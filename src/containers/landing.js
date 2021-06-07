@@ -28,9 +28,12 @@ function LandingPage() {
 
         <img src={usedby} alt="usedby" className="usedby" />
         <div>
-          <Link to="https://chrome.google.com/webstore/detail/whatzapp/clgficggccelgifppbcaepjdkklfcefd">
+          <a
+            href="https://chrome.google.com/webstore/detail/whatzapp/clgficggccelgifppbcaepjdkklfcefd"
+            target="_blank"
+          >
             <button className="e0_8">Download Extension</button>
-          </Link>
+          </a>
         </div>
 
         <br />

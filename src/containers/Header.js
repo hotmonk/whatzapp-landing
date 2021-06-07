@@ -15,7 +15,7 @@ function Header() {
               <u
                 style={{
                   textDecorationLine: "underline",
-                  textDecorationColor: "red",
+                  textDecorationColor: "#4F4846",
                 }}
               >
                 WhatsApp
@@ -33,9 +33,12 @@ function Header() {
               sales.{" "}
             </div>
             {
-              <Link to="https://chrome.google.com/webstore/detail/whatzapp/clgficggccelgifppbcaepjdkklfcefd">
+              <a
+                href="https://chrome.google.com/webstore/detail/whatzapp/clgficggccelgifppbcaepjdkklfcefd"
+                target="_blank"
+              >
                 <button className="e0_8">Download Extension</button>
-              </Link>
+              </a>
             }
           </div>
         </div>

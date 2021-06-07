@@ -16,6 +16,11 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.subscriptionPlans :not(button):hover {
+  background-color: #88ff9f;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -38,12 +43,14 @@
 .cardHeader {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   text-align: center;
 }
+
 .rechargeButton {
-  background: #88ff9f;
+  background: black;
+  color: #88ff9f;
   height: 34px;
   width: 113px;
   margin-top: 34px;
@@ -51,24 +58,15 @@
   border-radius: 3px;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
   font-size: 18px;
-  color: black;
+
   margin-left: 34%;
   margin-bottom: 24px;
   font-weight: 600;
 }
-.gap2 button {
-  background-color: black;
-  color: #88ff9f;
-  font-weight: 600;
-}
+
 .Pricing {
   margin-top: 4%;
 }
 .gap2 .cardHeader span {
   font-size: 1rem;
-}
-
-.gap2 {
-  background-color: #88ff9f;
-  color: black;
 }
