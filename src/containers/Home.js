@@ -12,6 +12,9 @@ function Home(props) {
   //sends back the expiry date of the account
   useEffect(() => {
     console.log(localStorage.getItem("mobile"));
+    if (localStorage.getItem("mobile") == null) {
+      alert("Please Download the extension !");
+    }
     axios
       .get("https://whatzapp.co/api/v1/whatzapp/getCreditHistory", {
         params: {
