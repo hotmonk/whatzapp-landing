@@ -14,7 +14,9 @@ export const stripePaymentMethodHandler = async (data, cb) => {
       // email: result.paymentMethod.billing_details.email,
       amount: amount,
     });
+
     console.log(paymentResponse);
+
     cb(paymentResponse);
   }
 };
