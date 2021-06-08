@@ -85,7 +85,7 @@ export default function CheckoutForm(props) {
       } else {
         // The card action has been handled
         // The PaymentIntent can be confirmed again on the server
-        window.location = "https://hooks.stripe.com/...";
+
         const serverResponse = await fetch(`${API_ENDPOINT}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
