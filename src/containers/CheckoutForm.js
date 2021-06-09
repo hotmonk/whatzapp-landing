@@ -85,6 +85,7 @@ export default function CheckoutForm(props) {
       } else {
         // The card action has been handled
         // The PaymentIntent can be confirmed again on the server
+        console.log(paymentIntent);
 
         const serverResponse = await fetch(`${API_ENDPOINT}`, {
           method: "POST",
@@ -92,8 +93,6 @@ export default function CheckoutForm(props) {
           body: JSON.stringify({
             payment_intent_id: paymentIntent.id,
             mobile: localStorage.getItem("mobile").toString(),
-            // name: result.paymentMethod.billing_details.name,
-            // email: result.paymentMethod.billing_details.email,
             amount: props.amount,
           }),
         });

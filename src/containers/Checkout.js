@@ -7,7 +7,7 @@ import { Redirect } from "react-router-dom";
 import "./landing.css";
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
-const stripePromise = loadStripe("pk_test_KMj7ZEcfaDq0VDhBCT8MXclB");
+const stripePromise = loadStripe("pk_live_KgMMnFPF9vrpTWzS9DXM9scB");
 
 const successMessage = () => {
   return (
