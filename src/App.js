@@ -22,7 +22,9 @@ function App() {
         <Route path="/pricing" exact component={Pricing} />
         {/* <Route path="/signup" exact component={Signup}/>
       <Route path="/login" exact component={Login}/> */}
-        <Route path="/home" exact component={Home} />
+        <Route path="/home/:id" exact component={Home} />
+        <Route path="/home/" exact component={Home} />
+
         <Route path="/checkout" exact component={Checkout} />
         <Route path="/dashboard" exact component={Dashboard} />
         <Route path="/" component={LandingPage} />

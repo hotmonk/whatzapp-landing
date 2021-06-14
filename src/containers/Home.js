@@ -10,22 +10,64 @@ function Home(props) {
   const [amountToPay, setAmountToPay] = useState(745);
   //this func fires on component load up
   //sends back the expiry date of the account
+  var mobile_no;
   useEffect(() => {
-    console.log(localStorage.getItem("mobile"));
-    if (localStorage.getItem("mobile") == null) {
-      alert("Please Download the extension !");
+    var numberInfo = window.location.pathname;
+    mobile_no = numberInfo.substring(6, numberInfo.length);
+    console.log(mobile_no);
+
+    if (window.location.pathname == "/home") {
+      mobile_no = localStorage.getItem("mobile").toString();
     }
+
     axios
       .get("https://whatzapp.co/api/v1/whatzapp/getCreditHistory", {
         params: {
-          mobile: localStorage.getItem("mobile").toString(),
+          mobile: mobile_no,
         },
       })
       .then(function (response) {
         // console.log(response.data.data[0].expiry_date.substr(0,10));
         setExpiry(response.data.data[0].expiry_date.substr(0, 10));
+      })
+      .catch((error) => {
+        alert("Please reload this Page");
       });
   }, []);
+
+  var user_mobile;
+
+  if (window.location.pathname == "/home") {
+    user_mobile = localStorage.getItem("mobile").toString();
+  } else {
+    user_mobile = window.location.pathname.substring(
+      6,
+      window.location.pathname.length
+    );
+
+    localStorage.setItem("mobile", user_mobile);
+  }
+
+  // let currdate = new Date();
+
+  // let currYear = currdate.getFullYear();
+
+  // let currMonth = currdate.getMonth() + 1;
+
+  // let currDate = currdate.getDate();
+
+  // var expiryYear = parseInt(expiry.substring(0, 4));
+  // var expiryMonth = parseInt(expiry.substring(5, 7));
+  // var expiryDate = parseInt(expiry.substring(8, 11));
+
+  // const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+  // const firstDate = new Date(currYear, currMonth, currDate);
+  // const secondDate = new Date(expiryYear, expiryMonth, expiryDate);
+
+  // const diffDays = Math.round(
+  //   Math.abs((firstDate - secondDate) / oneDay)
+  // );
+
   return (
     <div>
       <div className="home-parent">
@@ -34,9 +76,7 @@ function Home(props) {
             <br />
 
             <div className="validity-heading">Expiry Date:</div>
-            <div className="validity-value">
-              {expiry ? expiry.substr(0, 10) : null}
-            </div>
+            <div className="validity-value">{expiry ? expiry : null}</div>
           </div>
         </center>
 
