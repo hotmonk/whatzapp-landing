@@ -18,6 +18,8 @@ function Home(props) {
 
     if (window.location.pathname == "/home") {
       mobile_no = localStorage.getItem("mobile").toString();
+    } else {
+      fbqEventCatcher("InitiateCheckout");
     }
 
     axios
@@ -98,5 +100,24 @@ const mapDispatchToProps = (dispatch) => {
     LogOutHandler: () => dispatch({ type: "LOGOUT" }),
   };
 };
+
+function fbqEventCatcher(event) {
+  var imgFb = document.getElementById("analytics");
+  console.log(imgFb);
+  if (imgFb) {
+    imgFb.src = `https://www.facebook.com/tr?id=577091703261048&ev=${event}&noscript=1`;
+  } else {
+    var fbpixImg = document.createElement("noscript");
+    imgFb = document.createElement("img");
+    imgFb.setAttribute("id", "analytics");
+    imgFb.height = 1;
+    imgFb.width = 1;
+    imgFb.style.display = "none";
+    imgFb.src = `https://www.facebook.com/tr?id=577091703261048&ev=${event}&noscript=1`;
+    fbpixImg.append(imgFb);
+
+    document.getElementsByTagName("head")[0].append(fbpixImg);
+  }
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -100,6 +100,7 @@ export default function CheckoutForm(props) {
       }
     } else {
       // Show success message
+      fbqEventCatcher("Purchase");
       setLoading(false);
       props.setPaymentCompleted(response.success ? true : false);
     }
@@ -179,4 +180,23 @@ export default function CheckoutForm(props) {
       </form>
     </React.Fragment>
   );
+}
+
+function fbqEventCatcher(event) {
+  var imgFb = document.getElementById("analytics");
+  console.log(imgFb);
+  if (imgFb) {
+    imgFb.src = `https://www.facebook.com/tr?id=577091703261048&ev=${event}&noscript=1`;
+  } else {
+    var fbpixImg = document.createElement("noscript");
+    imgFb = document.createElement("img");
+    imgFb.setAttribute("id", "analytics");
+    imgFb.height = 1;
+    imgFb.width = 1;
+    imgFb.style.display = "none";
+    imgFb.src = `https://www.facebook.com/tr?id=577091703261048&ev=${event}&noscript=1`;
+    fbpixImg.append(imgFb);
+
+    document.getElementsByTagName("head")[0].append(fbpixImg);
+  }
 }
