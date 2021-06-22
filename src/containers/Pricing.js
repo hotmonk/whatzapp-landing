@@ -17,7 +17,7 @@ const Pricing = () => {
 
           <div className="cardBody">
             <h3>
-              $9.99<span>/month</span>
+              $10<span>/month</span>
             </h3>
             <div>
               <ul>
@@ -42,7 +42,7 @@ const Pricing = () => {
             <Link to="/checkout">
               <button
                 className="rechargeButton"
-                onClick={() => localStorage.setItem("amountToPay", "74500")}
+                onClick={() => localStorage.setItem("amountToPay", "1000")}
               >
                 Try Now
               </button>
@@ -83,7 +83,7 @@ const Pricing = () => {
             <Link to="/checkout">
               <button
                 className="rechargeButton"
-                onClick={() => localStorage.setItem("amountToPay", "745000")}
+                onClick={() => localStorage.setItem("amountToPay", "10000")}
               >
                 Try Now
               </button>
