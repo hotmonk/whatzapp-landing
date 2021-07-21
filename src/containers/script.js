@@ -1,4 +1,4 @@
-const API_ENDPOINT = "https://whatzapp.co/api/v1/whatzapp/payVerify";
+const API_ENDPOINT = "https://eazybe.com/api/v1/whatzapp/payVerify";
 
 export const stripePaymentMethodHandler = async (data, cb) => {
   const { amount, result } = data;

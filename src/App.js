@@ -11,6 +11,7 @@ import Checkout from "./containers/Checkout";
 import Dashboard from "./containers/Dashboard";
 import { Route, Switch } from "react-router-dom";
 import Pricing from "./containers/Pricing";
+import Feedback from "./containers/Feedback";
 function App() {
   return (
     <div>
@@ -24,7 +25,7 @@ function App() {
       <Route path="/login" exact component={Login}/> */}
         <Route path="/home/:id" exact component={Home} />
         <Route path="/home/" exact component={Home} />
-
+        <Route path="/feedback/:id" exact component={Feedback} />
         <Route path="/checkout" exact component={Checkout} />
         <Route path="/dashboard" exact component={Dashboard} />
         <Route path="/" component={LandingPage} />

@@ -23,7 +23,7 @@ function Home(props) {
     }
 
     axios
-      .get("https://whatzapp.co/api/v1/whatzapp/getCreditHistory", {
+      .get("https://eazybe.com/api/v1/whatzapp/getCreditHistory", {
         params: {
           mobile: mobile_no,
         },

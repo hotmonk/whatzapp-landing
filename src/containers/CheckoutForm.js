@@ -7,7 +7,7 @@ import {
   CardCvcElement,
 } from "@stripe/react-stripe-js";
 import { stripePaymentMethodHandler } from "./script";
-const API_ENDPOINT = "https://whatzapp.co/api/v1/whatzapp/payVerify";
+const API_ENDPOINT = "https://eazybe.com/api/v1/whatzapp/payVerify";
 const CARD_ELEMENT_OPTIONS = {
   style: {
     base: {
